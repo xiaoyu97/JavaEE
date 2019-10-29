@@ -9,9 +9,11 @@
 <html>
 <head>
     <title>error</title>
+    <link href="./css/success.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<h1>
 <%= request.getAttribute("Msg")%>
-
+</h1>
 </body>
 </html>

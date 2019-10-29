@@ -1,0 +1,26 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    background: url(../images/bbb.jpg)no-repeat;
+    background-size: cover;
+    color: #eeeeee;
+}
+.login-ic {
+    background: rgba(255, 255, 255, 0.32);
+    margin-bottom:2.5em;
+    padding: 37px;
+}
+.log-bwn input[type="submit"] {
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    padding: 13px 0;
+    background: #ff3366;
+    display: inline-block;
+    width: 15%;
+    outline:none;
+    border:2px solid #ff3366;
+    cursor:pointer;
+    text-transform:uppercase;
+}

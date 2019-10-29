@@ -4,18 +4,27 @@ import domain.User;
 import service.LoginService;
 //import service.Select;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * @author edz
  */
 @WebServlet("/login")
 public class Login extends HttpServlet {
+    @Override
+    public void init(ServletConfig config) throws ServletException {
+        LoginService loginService = new LoginService();
+        List phones = loginService.getPhone();
+        System.out.println("============");
+        System.out.println(phones);
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
